@@ -1,0 +1,41 @@
+# WordPress Core Files - игнорируем ядро, если управляем только темой/плагином
+# /wp-admin/
+# /wp-includes/
+# /wp-*.php
+# /index.php
+# /xmlrpc.php
+# /license.txt
+# /readme.html
+
+# Sensitive Files
+wp-config.php
+.htaccess
+
+# Uploads
+/wp-content/uploads/
+/wp-content/blogs.dir/
+/wp-content/upgrade/
+/wp-content/backup-db/
+
+# Cache and Temp
+/wp-content/cache/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+
+# Node Modules / Vendor Folders (если используются)
+node_modules/
+vendor/
+
+# Build Artifacts (зависит от вашего процесса сборки)
+dist/
+build/
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor Files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
