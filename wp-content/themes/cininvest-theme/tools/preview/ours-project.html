@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OURS — single-project preview</title>
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container site-header__inner">
+        <a class="site-header__logo" href="#"><img src="../../assets/img/logo.svg" alt="CININVEST"></a>
+        <nav class="main-nav" id="main-nav"><ul class="main-nav__list"><li><a href="#">Наша платформа</a></li><li><a href="#">Проекты</a></li><li><a href="#">FAQ</a></li><li><a href="#">Документы</a></li></ul></nav>
+        <div class="site-header__actions">
+            <a class="site-header__auth" href="#">Вход</a>
+            <button class="burger" type="button"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</header>
+<main class="project">
+    <section class="project-hero">
+        <div class="project-hero__media">
+            <img src="../../assets/img/project-hero.jpg" alt="Flip">
+            <a class="project-hero__back" href="javascript:void(0)" aria-label="Назад"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <div class="project-hero__rounds">
+                <button class="round-tab round-tab--active" type="button">1 раунд</button>
+                <button class="round-tab" type="button">2 раунд</button>
+            </div>
+            <div class="project-hero__caption container">
+                <h1 class="project-hero__title">Flip (демо-проект seed-demo.php)</h1>
+                <p class="project-hero__desc">Демонстрационный проект для сквозного теста платформы, создан tools/seed-demo.php.</p>
+            </div>
+        </div>
+        <aside class="fund-card">
+            <div class="fund-card__progress">
+                <div class="fund-card__progress-main">
+                    <span class="fund-card__collected">Проект уже собрал 900 000 ₽</span>
+                    <div class="fund-card__bar"><span class="fund-card__bar-fill" style="width:30%"></span><span class="fund-card__bar-thumb" style="left:30%"></span></div>
+                </div>
+                <div class="fund-card__goal"><small>Цель раунда</small><b>3 000 000 ₽</b></div>
+            </div>
+            <div class="fund-card__meta"><div><b>5 000 ₽</b><span>Цена за 1 долю</span></div><div><b>1 доля</b><span>Минимальный пакет</span></div><div><b>110</b><span>Доступно долей</span></div></div>
+            <div class="fund-card__action"><button class="btn btn--primary" type="button">Инвестировать</button><div class="fund-card__action-meta"><span class="fund-card__action-count">1 инвесторов</span><span class="fund-card__action-text">Вы можете получать долю от прибыли кинопроекта.</span></div></div>
+            <div class="fund-card__action"><button class="btn btn--grey fund-card__btn--ghost" type="button">Спонсировать</button><div class="fund-card__action-meta"><span class="fund-card__action-count">1 спонсоров</span><span class="fund-card__action-text">Вы можете стать частью проекта и помочь в его реализации.</span></div></div>
+        </aside>
+    </section>
+
+    <div class="project-body container">
+        <nav class="project-tabs" data-tabs role="tablist">
+            <button class="project-tabs__link project-tabs__link--active" data-tab="about" role="tab">О проекте</button>
+            <button class="project-tabs__link" data-tab="team" role="tab">Команда</button>
+            <button class="project-tabs__link" data-tab="materials" role="tab">Творческие материалы</button>
+            <button class="project-tabs__link" data-tab="docs" role="tab">Документы</button>
+            <button class="project-tabs__link" data-tab="rewards" role="tab">Вознаграждения</button>
+        </nav>
+
+        <section class="project-panel is-active" data-panel="about">
+            <div class="about-row"><h3 class="about-row__label">Жанр</h3><div class="about-row__tags"><span class="tag">Драма</span><span class="tag">Триллер</span></div></div>
+            <div class="about-row"><h3 class="about-row__label">Хронометраж</h3><p class="about-row__text">104 мин</p></div>
+            <div class="about-row"><h3 class="about-row__label">Тип</h3><div class="about-row__tags"><span class="tag">Полный метр</span></div></div>
+            <div class="about-row"><h3 class="about-row__label">Вид</h3><div class="about-row__tags"><span class="tag">Игровое</span></div></div>
+            <div class="about-row"><h3 class="about-row__label">Логлайн</h3><p class="about-row__text">Программист случайно взламывает архив закрытой киностудии и находит там сценарий, предсказавший его собственную жизнь.</p></div>
+            <div class="about-row"><h3 class="about-row__label">Оригинальная идея / Хай-концепт</h3><p class="about-row__text">Технотриллер на стыке хакерской драмы и производственного кино о создании фильма.</p></div>
+            <div class="about-row"><h3 class="about-row__label">Сеттинг</h3><p class="about-row__text">Москва, наши дни</p></div>
+            <div class="about-row"><h3 class="about-row__label">Аннотация</h3><p class="about-row__text">Демо-аннотация проекта, сгенерированная сид-скриптом для сквозного теста.</p></div>
+            <div class="about-row"><h3 class="about-row__label">Синопсис</h3><p class="about-row__text">Демо-синопсис. Текст сгенерирован tools/seed-demo.php и предназначен только для проверки вёрстки/данных.</p></div>
+            <div class="about-row"><h3 class="about-row__label">Локации</h3><p class="about-row__text">Москва, Санкт-Петербург</p></div>
+
+            <h2 class="section-title">Отзывы</h2>
+            <div class="reviews__scroll">
+                <figure class="review"><header class="review__head"><span class="review__ava"></span><figcaption><b class="review__name">Светлана Инвесторова</b><span class="review__role">Инвестор</span></figcaption></header><blockquote class="review__text">Отличная команда, прозрачная отчётность — вложился без колебаний.</blockquote></figure>
+                <figure class="review"><header class="review__head"><span class="review__ava"></span><figcaption><b class="review__name">Дмитрий Спонсоров</b><span class="review__role">Спонсор</span></figcaption></header><blockquote class="review__text">Поддержал проект, получил мерч раньше премьеры — очень доволен.</blockquote></figure>
+            </div>
+
+            <h2 class="project-panel__title" style="margin-top:32px">Команда (для проверки .member)</h2>
+            <article class="member">
+                <header class="member__head"><img class="member__ava" src="../../assets/img/poster.jpg" alt=""><div><b class="member__name">Иван Съёмкин</b><span class="member__role">Режиссёр</span></div></header>
+                <p class="member__label">Обо мне</p><p class="member__text">Дебютный полный метр, до этого — три короткометражки в фестивальной программе.</p>
+                <p class="member__label">Ссылка на Кинопоиск</p><a class="member__link" href="#">https://www.kinopoisk.ru/</a>
+            </article>
+
+            <h2 class="project-panel__title" style="margin-top:32px">Материалы (для проверки .file-row)</h2>
+            <article class="file-row"><span class="file-row__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v15H6V2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M15 2v5h5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><div class="file-row__body"><h3>Сценарий (черновик)</h3><p>PLAIN 1 КБ</p></div><a class="file-row__btn" href="#" target="_blank">Посмотреть</a></article>
+
+            <h2 class="project-panel__title" style="margin-top:32px">Вознаграждения (для проверки .reward-block)</h2>
+            <form class="reward-block">
+                <div class="reward-block__head"><span class="reward-block__num">01</span><div><h3 class="reward-block__title">Поддержать на любую сумму</h3><p class="reward-block__sub">- Спасибо, мне не нужно вознаграждение, я просто хочу поддержать проект.</p></div></div>
+                <input class="field__input reward-block__input" type="number" placeholder="Введите сумму">
+                <div class="reward-presets"><button class="preset" type="button">200 ₽</button><button class="preset" type="button">500 ₽</button><button class="preset" type="button">750 ₽</button><button class="preset" type="button">1000 ₽</button></div>
+                <button class="btn btn--primary reward-block__buy" type="submit">Купить</button>
+            </form>
+        </section>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>verify check</title>
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../style.css">
+<style>body{background:#fff}.verify-step{display:block!important;border-bottom:1px dashed #ddd}</style>
+</head><body class="home">
+<main class="verify" data-verify>
+
+<section class="verify-step container" data-vstep="type">
+  <div class="verify-type">
+    <p class="verify-type__pre">Прежде чем стать инвестором, необходимо пройти верификацию</p>
+    <h1 class="verify__title">Верификация аккаунта</h1>
+    <p class="verify-type__lead">Для инвестиций в кинопроекты нам нужно будет заключить договор и получить от вас юридические и банковские данные</p>
+    <p class="verify-type__q">Выберите, будете ли вы проводить операции как физическое лицо или представитель организации</p>
+    <div class="verify-type__options">
+      <button class="type-option type-option--active" type="button"><span>Физическое лицо</span></button>
+      <button class="type-option" type="button"><span>ИП</span></button>
+      <button class="type-option" type="button"><span>Юридическое лицо</span></button>
+    </div>
+    <p class="verify-type__warn">После прохождения верификации поменять тип профиля будет невозможно!</p>
+    <div class="verify__actions">
+      <button class="btn btn--grey btn--icon-left" type="button">← Вернуться позже</button>
+      <button class="btn btn--primary" type="button">Продолжить как физлицо →</button>
+    </div>
+  </div>
+</section>
+
+<section class="verify-step container" data-vstep="passport">
+  <h1 class="verify__title">Верификация физлица</h1>
+  <p class="verify__lead">Сначала, нужно загрузить два разворота паспорта. Мы распознаем большую часть информации на них и заполним поля для договора. Дополнительно потребуется ввести адрес регистрации</p>
+  <h2 class="verify__subtitle">Паспортные данные</h2>
+  <div class="field"><span class="field__label">Паспорт, разворот с фотографией</span><label class="file-upload"><span class="file-upload__check"></span><span class="file-upload__text">Загрузите разворот паспорта с фотографией</span><span class="file-upload__btn">Выбрать файл<input type="file" hidden></span></label></div>
+  <div class="field"><span class="field__label">Паспорт, разворот с пропиской</span><label class="file-upload"><span class="file-upload__check"></span><span class="file-upload__text">Загрузите разворот паспорта с пропиской</span><span class="file-upload__btn">Выбрать файл<input type="file" hidden></span></label></div>
+  <label class="field"><span class="field__label">Адрес регистрации</span><input class="field__input" placeholder="Введите свой адрес и выберите подходящий вариант"></label>
+  <label class="checkbox verify__agree"><input type="checkbox"><span>Нажимая кнопку «Отправить», я соглашаюсь с <a href="#">правилами платформы</a></span></label>
+  <label class="checkbox verify__agree"><input type="checkbox"><span>Нажимая кнопку «Отправить», я соглашаюсь с <a href="#">декларацией о рисках</a></span></label>
+  <div class="verify__actions"><button class="btn btn--grey btn--icon-left" type="button">← Назад</button><button class="btn btn--primary" type="button">Отправить →</button></div>
+</section>
+
+<section class="verify-step container" data-vstep="pdl">
+  <h1 class="verify__title verify__title--sm">Небольшое уточнение</h1>
+  <p class="verify__lead">Являетесь ли вы российским публичным должностным лицом, иностранным публичным должностным лицом или должностным лицом публичной международной организации?</p>
+  <p style="text-align:center"><button class="btn btn--grey" type="button">Что это значит?</button></p>
+  <div class="verify__actions" style="justify-content:center"><button class="btn btn--grey" type="button">Нет</button><button class="btn btn--primary" type="button">Да</button></div>
+</section>
+
+<section class="verify-step container" data-vstep="checking">
+  <h1 class="verify__title verify__title--sm">Проверка данных</h1>
+  <p class="verify__lead">Мы одновременно проводим все проверки данных по вашей заявке</p>
+  <div class="check-card">
+    <h3 class="check-card__title">Выполняется проверка…</h3>
+    <ul class="check-list">
+      <li class="check-list__item check-list__item--done"><span class="check-list__dot"></span>Проверка паспортных данных</li>
+      <li class="check-list__item check-list__item--done"><span class="check-list__dot"></span>Открытие номинального счёта в банке</li>
+      <li class="check-list__item"><span class="check-list__dot"></span>Проверка данных по 115-ФЗ <span class="check-list__timer">Осталось 20 ч</span></li>
+    </ul>
+  </div>
+  <div class="verify__actions"><button class="btn btn--grey btn--icon-left" type="button">← Назад</button><button class="btn btn--primary" type="button">Продолжить →</button></div>
+</section>
+
+<section class="verify-step container" data-vstep="almost">
+  <h1 class="verify__title verify__title--sm">Почти готово</h1>
+  <p class="verify__lead">Проверьте данные, которые мы распознали по вашим документам — если всё верно, подтвердите и продолжите</p>
+  <div class="passport-card">
+    <h3 class="passport-card__title">Паспортные данные</h3>
+    <dl class="passport-grid">
+      <div class="passport-grid__cell"><dt>Серия и номер</dt><dd>—</dd></div>
+      <div class="passport-grid__cell"><dt>Фамилия</dt><dd>Иванов</dd></div>
+      <div class="passport-grid__cell"><dt>Имя</dt><dd>Иван</dd></div>
+      <div class="passport-grid__cell"><dt>Отчество</dt><dd>Иванович</dd></div>
+      <div class="passport-grid__cell"><dt>Дата рождения</dt><dd>—</dd></div>
+      <div class="passport-grid__cell"><dt>Гражданство</dt><dd>РФ</dd></div>
+      <div class="passport-grid__cell"><dt>Дата выдачи</dt><dd>—</dd></div>
+      <div class="passport-grid__cell"><dt>Код подразделения</dt><dd>—</dd></div>
+      <div class="passport-grid__cell"><dt>Адрес регистрации</dt><dd>—</dd></div>
+    </dl>
+    <h3 class="passport-card__title">Другие документы</h3>
+    <dl class="passport-grid"><div class="passport-grid__cell"><dt>ИНН</dt><dd>**** **** 9200 <button class="copy-btn" type="button"></button></dd></div></dl>
+    <div class="passport-card__foot">
+      <label class="checkbox verify__agree"><input type="checkbox"><span>Подтверждаю, что указанные данные верны</span></label>
+      <div class="verify__actions"><button class="btn btn--grey btn--icon-left" type="button">← Назад</button><button class="btn btn--primary" type="submit">Подтвердить данные →</button></div>
+      <p class="passport-card__support">Возникли вопросы по данным? Напишите в поддержку: <a href="#">support@test.ru</a></p>
+    </div>
+  </div>
+</section>
+</main>
+</body></html>

@@ -1,0 +1,16 @@
+/*
+Theme Name: CININVEST
+Description: Инвестиционная платформа для кинопроектов. Краудфандинг и краудинвестинг. Профили инвестора, спонсора, кинематографиста; страница проекта, подача заявки, верификация, квалификация.
+Version: 1.0.42
+Requires at least: 6.0
+Requires PHP: 7.4
+Text Domain: cininvest
+*/
+
+@import url('assets/css/base.css');
+@import url('assets/css/header.css');
+@import url('assets/css/profile.css');
+@import url('assets/css/home.css');
+@import url('assets/css/forms.css');
+@import url('assets/css/project.css');
+@import url('assets/css/desktop.css');

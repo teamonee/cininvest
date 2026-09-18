@@ -1,0 +1,61 @@
+/* Шапка */
+.site-header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:var(--shadow-header)}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.site-header__logo img{height:34px;width:auto;display:block}
+.site-header__actions{display:flex;align-items:center;gap:16px}
+.site-header__auth{font-weight:600;text-decoration:none;white-space:nowrap}
+.site-header__account{flex:0 0 auto;width:36px;height:36px;border-radius:50%;overflow:hidden;display:block;line-height:0;background:none;border:0;padding:0;cursor:pointer}
+.site-header__account svg{width:100%;height:100%;display:block}
+.site-header__cta{min-height:44px;padding:10px 16px;font-size:13px;white-space:nowrap}
+
+/* Меню аватарки (в т.ч. «Выход» — единственная точка выхода на всех ширинах) */
+.acctmenu{position:relative;flex:0 0 auto}
+.acctmenu__panel{position:absolute;right:0;top:calc(100% + 14px);min-width:200px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-card);padding:8px;z-index:60}
+.acctmenu__link{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;color:var(--c-ink)}
+.acctmenu__link:hover{background:var(--c-grey-2)}
+.acctmenu__item--logout{color:var(--c-primary);font-weight:600}
+.acctmenu__item--logout:hover{background:#FBEAEA}
+/* На мобильном у авторизованного в шапке уже есть колокольчик + аватар + бургер —
+   ролевую CTA-кнопку прячем, чтобы ряд не переполнял вьюпорт (у гостя «Регистрация» остаётся). */
+body.logged-in .site-header__cta{display:none}
+.burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:0;padding:0}
+.burger span{height:2px;background:var(--c-ink);border-radius:2px;transition:.25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.main-nav{position:fixed;left:0;right:0;top:64px;background:#fff;border-bottom:1px solid var(--c-line);padding:16px;transform:translateY(-130%);transition:transform .3s;visibility:hidden}
+.main-nav.is-open{transform:none;visibility:visible}
+.main-nav__list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.main-nav__list a{text-decoration:none;font-weight:500}
+
+/* Уведомления (колокольчик в шапке для авторизованных) */
+.notif{position:relative;flex:0 0 auto}
+.notif__btn{position:relative;background:none;border:0;padding:0;color:var(--c-ink);display:inline-flex;line-height:0}
+.notif__btn svg{width:24px;height:24px;display:block}
+.notif__badge{position:absolute;top:-5px;right:-6px;min-width:16px;height:16px;padding:0 4px;border-radius:10px;background:var(--c-primary);color:#fff;font-size:10px;font-weight:700;line-height:16px;text-align:center;font-family:var(--font-body)}
+.notif__panel{position:absolute;right:0;top:calc(100% + 14px);width:300px;max-width:calc(100vw - 32px);background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-card);padding:16px;z-index:60}
+.notif__head{font-weight:700;font-size:14px;margin:0 0 12px}
+.notif__list{list-style:none;margin:0;padding:0;display:grid;gap:10px;max-height:340px;overflow-y:auto}
+.notif__item{font-size:13px;line-height:1.4;border-bottom:1px solid var(--c-line);padding-bottom:10px}
+.notif__item:last-child{border-bottom:0;padding-bottom:0}
+.notif__item a,.notif__item span{text-decoration:none;color:var(--c-ink);display:block}
+.notif__item--unread a,.notif__item--unread span{font-weight:600}
+.notif__date{display:block;color:var(--c-muted);font-size:11px;margin-top:4px}
+.notif__empty{color:var(--c-muted);font-size:13px;margin:0}
+
+/* Подвал */
+.site-footer{background:var(--c-dark);color:#fff;margin-top:24px;padding:20px 0 20px}
+.site-footer__grid{display:grid;gap:24px}
+.site-footer__logo img{height:40px;width:auto;display:block}
+.site-footer__title{font-size:15px;margin:0 0 10px}
+.site-footer__nav-head{color:#bbb;margin:0 0 8px}
+.site-footer__list{list-style:none;margin:0 0 10px;padding:0;display:grid;gap:6px;color:#ddd;font-size:14px}
+.site-footer__list a{color:inherit;text-decoration:none}
+.site-footer__list li{padding-left:14px;position:relative}
+.site-footer__list li::before{content:"•";position:absolute;left:0;color:#888}
+.site-footer__list--plain li{padding-left:0}
+.site-footer__list--plain li::before{content:none}
+.site-footer p{color:#ddd;font-size:14px;line-height:1.6}
+.site-footer__socials{display:flex;gap:10px;margin-top:10px}
+.site-footer__socials img{width:40px;height:40px;display:block}
+.site-footer .site-footer__copy{text-align:center;color:#fff;font-size:12px;margin:50px 0 0}

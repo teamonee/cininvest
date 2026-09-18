@@ -1,0 +1,28 @@
+/* ===== Локальные шрифты CININVEST ===== */
+
+/* Дисплейный — капс-заголовки (ИНВЕСТИРУЙТЕ В КИНО, ВЕРИФИКАЦИЯ, ПЕРЕВОЗЧИК) */
+@font-face {
+  font-family: 'Palui SP Demo';
+  src: url('PaluiSPDemo-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Основной — Montserrat (variable, вес 300–700) */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat-Variable.woff2') format('woff2-variations'),
+       url('Montserrat-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat-Italic-Variable.woff2') format('woff2-variations'),
+       url('Montserrat-Italic-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}

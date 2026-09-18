@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>app check</title>
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../style.css">
+<style>body{background:#fff}</style>
+</head><body class="page-template-page-application">
+<main class="application-flow">
+<section class="app-step is-active">
+  <div class="app-form-head container"><h1 class="app-form__title">Заявка <span>физлица</span></h1><p class="app-form__req">*поля, обязательные для заполнения</p></div>
+  <div class="container"><p class="app-form__error">Укажите название проекта</p></div>
+  <ol class="stepper container" role="list">
+    <li class="stepper__item stepper__item--active"><span class="stepper__num">01</span><span class="stepper__label">Данные</span></li>
+    <li class="stepper__item"><span class="stepper__num">02</span><span class="stepper__label">Проект</span></li>
+    <li class="stepper__item"><span class="stepper__num">03</span><span class="stepper__label">Создатели фильма</span></li>
+    <li class="stepper__item"><span class="stepper__num">04</span><span class="stepper__label">Календарный план</span></li>
+    <li class="stepper__item"><span class="stepper__num">05</span><span class="stepper__label">Финансирование производства</span></li>
+    <li class="stepper__item"><span class="stepper__num">06</span><span class="stepper__label">Реквизиты заявителя</span></li>
+    <li class="stepper__item"><span class="stepper__num">07</span><span class="stepper__label">Вознаграждения</span></li>
+  </ol>
+  <form class="app-form container">
+    <fieldset class="app-section" data-section="data">
+      <legend class="app-section__title">Мои данные</legend>
+      <label class="field"><span class="field__label">Образование</span><select class="field__input" name="education"><option value="">Выберите вид образования</option><option>Высшее</option><option>Среднее профессиональное</option></select></label>
+      <label class="field"><span class="field__label">Образовательные организации и специальности</span><input class="field__input" placeholder="Текст"></label>
+      <button class="add-more" type="button">Добавить ещё</button>
+      <label class="field"><span class="field__label">Опыт работы</span><input class="field__input" placeholder="Текст"></label>
+      <button class="add-more" type="button">Добавить ещё</button>
+      <label class="field"><span class="field__label">Дополнительно</span><input class="field__input" placeholder="Текст"></label>
+      <div class="field"><span class="field__label">Рекомендации, письма, отзывы, характеристики</span><span class="field__hint">Можно загрузить до 5 документов и(или) файлов</span>
+        <label class="dropzone"><input type="file" hidden><span>Перенесите файл с устройства или нажмите на данное поле для добавления файла<br><small>Размер файла: не больше 10 Мбайт · Расширение: pdf, jpeg, jpg, png, tiff</small></span></label></div>
+      <label class="field"><span class="field__label">Контактные данные*</span><input class="field__input" type="tel" placeholder="+7 (800) 555-35-55"></label>
+    </fieldset>
+    <fieldset class="app-section app-section--accent" data-section="project">
+      <legend class="app-section__title">Проект</legend>
+      <label class="field"><span class="field__label">Название проекта*</span><input class="field__input" placeholder="Текст" required></label>
+      <label class="field"><span class="field__label">Жанр*</span><select class="field__input"><option value="">Выберите жанр</option><option>Драма</option><option selected>Комедия</option></select></label>
+      <label class="field"><span class="field__label">Хронометраж*</span><input class="field__input" placeholder="Текст"></label>
+      <div class="field"><span class="field__label">Сценарий*</span><div class="file-attach"><span class="file-attach__name">Прикрепить файл</span><label class="file-attach__btn">Выбрать файл<input type="file" hidden></label></div></div>
+      <div class="field"><span class="field__label">Презентация*</span><div class="file-attach"><span class="file-attach__name">Прикрепить файл</span><label class="file-attach__btn">Выбрать файл<input type="file" hidden></label></div></div>
+    </fieldset>
+    <fieldset class="app-section app-section--accent" data-section="requisites">
+      <legend class="app-section__title">Реквизиты заявителя</legend>
+      <label class="field"><span class="field__label">ИНН*</span><input class="field__input" placeholder="Текст"></label>
+      <label class="field"><span class="field__label">СНИЛС*</span><input class="field__input" placeholder="Текст"></label>
+      <label class="field"><span class="field__label">Наименование банка*</span><input class="field__input" placeholder="Текст"></label>
+      <label class="field"><span class="field__label">КПП банка*</span><input class="field__input" placeholder="Текст"></label>
+    </fieldset>
+    <div class="app-form__actions">
+      <button class="btn btn--grey btn--icon-left" type="button">← Сохранить черновик</button>
+      <button class="btn btn--primary" type="button">Отправить →</button>
+    </div>
+  </form>
+</section>
+</main>
+</body></html>

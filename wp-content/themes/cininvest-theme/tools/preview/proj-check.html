@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>proj check</title>
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../style.css">
+<style>body{background:#fff}</style>
+</head>
+<body class="home">
+<main class="project">
+  <section class="project-hero">
+    <div class="project-hero__media">
+      <img src="../../assets/img/poster.jpg" alt="">
+      <a class="project-hero__back" href="#" aria-label="Назад"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <div class="project-hero__rounds container">
+        <button class="round-tab round-tab--active" type="button">1 раунд</button>
+      </div>
+      <div class="project-hero__caption container">
+        <h1 class="project-hero__title">Перевозчик</h1>
+        <p class="project-hero__desc">Бывший спецназовец Фрэнк Мартин живёт тихой жизнью на побережье южной Франции, нанимаясь «перевозчиком». Он занимается перевозом груза либо людей из пункта А в пункт Б без личного вмешательства и вопросов.</p>
+      </div>
+    </div>
+  </section>
+  <div class="project-body container">
+    <aside class="fund-card">
+      <div class="fund-card__progress">
+        <div class="fund-card__progress-main">
+          <span class="fund-card__collected">Проект уже собрал 500 000 ₽</span>
+          <div class="fund-card__bar"><span class="fund-card__bar-fill" style="width:20%"></span><span class="fund-card__bar-thumb" style="left:20%"></span></div>
+        </div>
+        <div class="fund-card__goal"><small>Цель раунда</small><b>11 000 000 ₽</b></div>
+      </div>
+      <div class="fund-card__meta"><div><b>5000 ₽</b><span>Цена за 1 долю</span></div><div><b>1 доля</b><span>Минимальный пакет</span></div></div>
+      <div class="fund-card__action"><button class="btn btn--primary" type="button">Инвестировать</button><div class="fund-card__action-meta"><span class="fund-card__action-count">500 инвесторов</span><span class="fund-card__action-text">Вы можете получать долю от прибыли кинопроекта.</span></div></div>
+      <div class="fund-card__action"><button class="btn btn--grey" type="button">Спонсировать</button><div class="fund-card__action-meta"><span class="fund-card__action-count">20 спонсоров</span><span class="fund-card__action-text">Вы можете стать частью проекта и помочь в его реализации.</span></div></div>
+    </aside>
+    <div class="project-body__content" data-tabs>
+      <nav class="project-tabs" role="tablist">
+        <button class="project-tabs__link" data-tab="about" role="tab">О проекте</button>
+        <button class="project-tabs__link project-tabs__link--active" data-tab="team" role="tab">Команда</button>
+        <button class="project-tabs__link" data-tab="materials" role="tab">Творческие материалы</button>
+        <button class="project-tabs__link" data-tab="docs" role="tab">Документы</button>
+        <button class="project-tabs__link" data-tab="rewards" role="tab">Вознаграждения</button>
+      </nav>
+      <section class="project-panel is-active" data-panel="team">
+        <h2 class="project-panel__title">Видеообращение</h2>
+        <div class="video-placeholder"><span>Видеообращение</span></div>
+        <h2 class="project-panel__title">Команда</h2>
+        <article class="member">
+          <header class="member__head"><img class="member__ava" src="../../assets/img/poster.jpg" alt=""><div><b class="member__name">Иванов Иван Иванович</b><span class="member__role">Руководитель</span></div></header>
+          <p class="member__label">Обо мне</p><p class="member__text">Последние 8 лет в роли product owner'а и CPO помогаю таким компаниям как Сбер, ВТБ, СберМаркет.</p>
+          <p class="member__label">Ссылка на Кинопоиск</p><a class="member__link" href="#">https://www.kinopoisk.ru/</a>
+        </article>
+        <article class="member">
+          <header class="member__head"><img class="member__ava" src="../../assets/img/poster.jpg" alt=""><div><b class="member__name">Иванов Иван Иванович</b><span class="member__role">Продюсер</span></div></header>
+          <p class="member__label">Обо мне</p><p class="member__text">Последние 8 лет в роли product owner'а и CPO помогаю таким компаниям как Сбер, ВТБ, СберМаркет.</p>
+          <p class="member__label">Ссылка на Кинопоиск</p><a class="member__link" href="#">https://www.kinopoisk.ru/</a>
+        </article>
+      </section>
+      <section class="project-panel" data-panel="rewards" id="rewards">
+        <form class="reward-block" method="post" action="#">
+          <div class="reward-block__head"><span class="reward-block__num">01</span><div><h3 class="reward-block__title">Поддержать на любую сумму</h3><p class="reward-block__sub">- Спасибо, мне не нужно вознаграждение, я просто хочу поддержать проект.</p></div></div>
+          <input class="field__input reward-block__input" type="number" placeholder="Введите сумму">
+          <div class="reward-presets"><button class="preset" type="button">200 ₽</button><button class="preset" type="button">500 ₽</button><button class="preset" type="button">750 ₽</button><button class="preset" type="button">1000 ₽</button></div>
+          <button class="btn btn--primary reward-block__buy" type="submit">Купить</button>
+        </form>
+        <form class="reward-block" method="post" action="#">
+          <div class="reward-block__head"><span class="reward-block__num">02</span><div><h3 class="reward-block__title">Вознаграждения</h3><p class="reward-block__sub">Выберите желаемое/ые вознаграждение/я.</p></div></div>
+          <ul class="reward-options">
+            <li class="reward-option"><label class="checkbox"><input type="checkbox"><span>Ранний доступ к стримингу (онлайн просмотр)</span></label><b class="reward-option__price">500 ₽</b></li>
+            <li class="reward-option"><label class="checkbox"><input type="checkbox"><span>Приглашение на два съёмочных дня</span></label><b class="reward-option__price">500 ₽</b></li>
+          </ul>
+          <button class="btn btn--primary reward-block__buy" type="submit">Купить <span data-rewards-total data-rewards-amount></span></button>
+        </form>
+      </section>
+    </div>
+  </div>
+</main>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
